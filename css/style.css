@@ -117,3 +117,12 @@ footer {
   font-size: 1rem;
   line-height: 1.7; /* Aumenta a altura da linha para melhor legibilidade */
 }
+
+.timeline-img {
+  width: 80%; 
+  max-width: 500px;
+  display: block;
+  margin: 1.5rem auto 0;
+  border-radius: 5px;
+  border: 2px solid var(--cor-borda);
+}
