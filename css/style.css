@@ -91,3 +91,7 @@ footer {
   border-top: 1px solid var(--cor-borda);
   color: #8b949e; /* Um cinza mais claro para o texto do rodapé */
 }
+
+.container h1 {
+  text-align: center;
+}
