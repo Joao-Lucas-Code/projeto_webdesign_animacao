@@ -125,15 +125,11 @@ footer {
   margin: 1.5rem auto 0;
   border-radius: 5px;
   border: 2px solid var(--cor-borda);
-}
-
-/* PRETO E BRANCO */
-
-.timeline-img {
-  /* ... seus estilos existentes ... */
+  /* PRETO E BRANCO */
   filter: grayscale(100%); /* Deixa a imagem em P&B */
   transition: filter 0.5s ease; /* Adiciona uma transição suave */
 }
+
 
 .timeline-img:hover {
   filter: grayscale(0%); /* Remove o filtro ao passar o mouse */
