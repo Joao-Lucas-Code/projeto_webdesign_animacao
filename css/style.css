@@ -95,3 +95,25 @@ footer {
 .container h1 {
   text-align: center;
 }
+
+/* ================================================
+   5. ESTILOS ESPECÍFICOS DA LINHA DO TEMPO
+   ================================================ */
+
+.timeline-item {
+  background-color: var(--cor-secundaria); /* Usa a cor de fundo mais escura que já definimos */
+  border-left: 4px solid var(--cor-primaria); /* Uma borda azul à esquerda para dar um charme */
+  padding: 1.5rem; /* Espaçamento interno para o conteúdo respirar */
+  margin-bottom: 2rem; /* Espaçamento entre os itens da linha do tempo */
+  border-radius: 5px; /* Cantos levemente arredondados */
+}
+
+.timeline-item h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem; /* Diminui a margem padrão abaixo do h2 */
+}
+
+.timeline-item p {
+  font-size: 1rem;
+  line-height: 1.7; /* Aumenta a altura da linha para melhor legibilidade */
+}
