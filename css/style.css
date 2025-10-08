@@ -1,1 +1,93 @@
-/* O arquivo principal de estilos  para tudo que for comum */
+/* ================================================
+   1. RESET BÁSICO E CONFIGURAÇÕES GLOBAIS
+   ================================================ */
+
+/* Um "reset" mais moderno que facilita o trabalho com tamanhos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  /* Faz com que padding e border não aumentem o tamanho final do elemento */
+}
+
+/* ================================================
+   2. VARIÁVEIS DE DESIGN (O "STYLE GUIDE")
+   ================================================ */
+
+/* Aqui definimos as cores e fontes para usar em todo o site. 
+   Se quiserem mudar uma cor, só precisam mudar aqui! */
+:root {
+  /* Cores */
+  --cor-fundo: #0d1117;          /* Um cinza quase preto, mais suave que #000 */
+  --cor-texto: #c9d1d9;         /* Um branco acinzentado, confortável de ler */
+  --cor-primaria: #58a6ff;       /* Um azul vibrante para links e destaques */
+  --cor-secundaria: #161b22;     /* Um cinza mais claro para caixas e fundos de seção */
+  --cor-borda: #30363d;          /* Cor para bordas sutis */
+
+  /* Tipografia */
+  --fonte-titulos: 'Poppins', sans-serif;  /* Exemplo de fonte para títulos */
+  --fonte-corpo: 'Roboto', sans-serif;    /* Exemplo de fonte para textos */
+}
+
+/* ================================================
+   3. ESTILOS GERAIS DO CORPO (BODY)
+   ================================================ */
+
+body {
+  font-family: var(--fonte-corpo);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6; /* Melhora a legibilidade dos textos */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fonte-titulos);
+  color: var(--cor-primaria); /* Dando destaque aos títulos */
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--cor-primaria);
+  text-decoration: none; /* Tira o sublinhado padrão dos links */
+  transition: color 0.3s ease; /* Efeito suave na mudança de cor */
+}
+
+a:hover {
+  color: #8abeff; /* Um tom de azul um pouco mais claro no hover */
+}
+
+/* ================================================
+   4. COMPONENTES COMUNS (HEADER, NAV, FOOTER)
+   ================================================ */
+
+/* Estilos para o menu de navegação que será igual em todas as páginas */
+nav ul {
+  list-style: none; /* Tira as bolinhas da lista */
+  display: flex;    /* Coloca os itens um ao lado do outro */
+  justify-content: center; /* Centraliza os itens */
+  gap: 2rem;        /* Espaçamento entre os itens */
+  padding: 1rem 0;
+  background-color: var(--cor-secundaria);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+nav a {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Um container genérico para centralizar o conteúdo */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto; /* O truque para centralizar na horizontal */
+  padding: 2rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 4rem;
+  border-top: 1px solid var(--cor-borda);
+  color: #8b949e; /* Um cinza mais claro para o texto do rodapé */
+}
