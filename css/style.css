@@ -118,6 +118,7 @@ footer {
   line-height: 1.7; /* Aumenta a altura da linha para melhor legibilidade */
 }
 
+/* 1. ESTILOS GERAIS PARA TODAS AS IMAGENS DO PROJETO */
 .timeline-img {
   width: 80%; 
   max-width: 500px;
@@ -129,8 +130,12 @@ footer {
   filter: grayscale(100%); /* Deixa a imagem em P&B */
   transition: filter 0.5s ease; /* Adiciona uma transição suave */
 
-  height: 150px; /* Define uma altura fixa para todas as imagens */
-  object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+}
+
+/* 2. ESTILO DE ALTURA FIXA APENAS PARA IMAGENS DENTRO DOS CARDS */
+.card .timeline-img {
+  height: 150px;
+  object-fit: cover;
 }
 
 
