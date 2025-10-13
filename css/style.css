@@ -128,6 +128,9 @@ footer {
   /* PRETO E BRANCO */
   filter: grayscale(100%); /* Deixa a imagem em P&B */
   transition: filter 0.5s ease; /* Adiciona uma transição suave */
+
+  height: 150px; /* Define uma altura fixa para todas as imagens */
+  object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
 }
 
 
