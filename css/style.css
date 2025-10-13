@@ -134,3 +134,36 @@ footer {
 .timeline-img:hover {
   filter: grayscale(0%); /* Remove o filtro ao passar o mouse */
 }
+
+/* ================================================
+   
+ESTILOS DOS HUBS (GRID DE CARDS)
+================================================ */
+
+.hub-grid {
+  display: grid;
+  /* Cria colunas responsivas: tenta encaixar o máximo de colunas de 300px, 
+     e distribui o espaço igualmente /
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem; / Espaço entre os cards /
+}
+
+.card {
+  background-color: var(--cor-secundaria);
+  border: 1px solid var(--cor-borda);
+  padding: 1.5rem;
+  border-radius: 5px;
+  text-decoration: none; / Tira o sublinhado do link /
+  color: var(--cor-texto); / Garante que o texto dentro do link tenha a cor padrão /
+  transition: transform 0.3s ease, border-color 0.3s ease; / Animação suave /
+}
+
+.card:hover {
+  transform: translateY(-5px); / Efeito de "levantar" o card ao passar o mouse /
+  border-color: var(--cor-primaria); / Borda fica azul para dar feedback */
+}
+
+.card h3 {
+  color: var(--cor-primaria);
+  margin-bottom: 0.75rem;
+}
