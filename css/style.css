@@ -161,6 +161,8 @@ ESTILOS DOS HUBS (GRID DE CARDS)
   display: grid;
   /* Cria colunas responsivas: tenta encaixar o máximo de colunas de 300px, 
      e distribui o espaço igualmente */
+  flex-wrap: wrap;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem; /* Espaço entre os cards */
 }
