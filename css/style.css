@@ -38,6 +38,15 @@ body {
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
   line-height: 1.6; /* Melhora a legibilidade dos textos */
+
+  /* --- MÁGICA DO STICKY FOOTER AQUI --- */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1; /* Faz o conteúdo principal crescer e empurrar o rodapé */
 }
 
 h1, h2, h3, h4, h5, h6 {
