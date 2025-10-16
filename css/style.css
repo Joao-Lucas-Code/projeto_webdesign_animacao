@@ -209,3 +209,28 @@ ESTILOS DOS HUBS (GRID DE CARDS)
   margin-bottom: 0.5rem;
   color: var(--cor-primaria);
 }
+
+/* ================================================
+   8. FUNCIONALIDADE: BOTÃO VOLTAR AO TOPO
+   ================================================ */
+
+#btnTopo {
+  display: none; /* Começa escondido por padrão */
+  position: fixed; /* Fica fixo na tela, mesmo com a rolagem */
+  bottom: 20px; /* 20 pixels de distância do fundo */
+  right: 30px; /* 30 pixels de distância da direita */
+  z-index: 99; /* Garante que ele fique sobre outros elementos */
+  border: none; /* Sem borda */
+  outline: none; /* Sem contorno ao clicar */
+  background-color: var(--cor-primaria); /* Usa nossa cor de destaque */
+  color: white; /* Cor da seta */
+  cursor: pointer; /* Muda o cursor para uma mãozinha */
+  padding: 15px;
+  border-radius: 50%; /* Deixa o botão perfeitamente redondo */
+  font-size: 18px; /* Tamanho da seta */
+  transition: background-color 0.3s ease; /* Transição suave na cor */
+}
+
+#btnTopo:hover {
+  background-color: #8abeff; /* Usa a cor de hover que já definimos */
+}
