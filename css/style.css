@@ -248,7 +248,7 @@ ESTILOS DOS HUBS (GRID DE CARDS)
 }
 
 .hero-text {
-  /* O texto já está bom, não precisa de estilo específico */
+  display: block; /* Mantém o comportamento padrão e evita regras vazias */
 }
 
 .hero-text h1 {
