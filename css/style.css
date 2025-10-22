@@ -282,3 +282,24 @@ ESTILOS DOS HUBS (GRID DE CARDS)
     display: none; 
   }
 }
+
+/* ================================================
+   10. ESTILOS DAS IMAGENS NA PÁGINA DE TÉCNICAS
+   ================================================ */
+
+.tecnica-img {
+  width: 100%; /* Faz a imagem ocupar todo o espaço do item da lista */
+  max-width: 600px; /* Limita a largura máxima em telas grandes */
+  display: block; /* Garante que a imagem se comporte como um bloco */
+  margin: 1.5rem auto 0; /* Adiciona espaço no topo e centraliza */
+  border-radius: 5px;
+  border: 2px solid var(--cor-borda);
+
+  /* Reutilizando nosso efeito de interatividade! */
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+.tecnica-img:hover {
+  filter: grayscale(0%);
+}
