@@ -234,3 +234,38 @@ ESTILOS DOS HUBS (GRID DE CARDS)
 #btnTopo:hover {
   background-color: #8abeff; /* Usa a cor de hover que já definimos */
 }
+
+/* ================================================
+   9. ESTILOS DA NOVA PÁGINA HOME (HERO)
+   ================================================ */
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem auto; /* Centraliza o parágrafo */
+}
+
+.hero-button {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #8abeff;
+  color: #fff;
+}
