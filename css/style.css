@@ -236,36 +236,49 @@ ESTILOS DOS HUBS (GRID DE CARDS)
 }
 
 /* ================================================
-   9. ESTILOS DA NOVA PÁGINA HOME (HERO)
+   9. ESTILOS DA NOVA PÁGINA HOME
    ================================================ */
 
-.hero {
-  text-align: center;
-  padding: 4rem 1rem;
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Cria duas colunas de tamanho igual */
+  gap: 2rem; /* Espaço entre as colunas */
+  align-items: center; /* Alinha o conteúdo verticalmente */
+  min-height: 70vh; /* Faz a seção ocupar boa parte da tela */
 }
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+.hero-text {
+  /* O texto já está bom, não precisa de estilo específico */
 }
 
-.hero p {
+.hero-text h1 {
+  font-size: 3.5rem; /* Aumenta um pouco o título */
+}
+
+.hero-text p {
   font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto 2rem auto; /* Centraliza o parágrafo */
+  margin-bottom: 2rem;
 }
 
-.hero-button {
-  background-color: var(--cor-primaria);
-  color: #fff;
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+.hero-image img {
+  width: 100%; /* Faz a imagem ocupar toda a coluna */
+  border-radius: 10px; /* Cantos arredondados para um visual suave */
 }
 
-.hero-button:hover {
-  background-color: #8abeff;
-  color: #fff;
+/* --- Ajuste para telas menores (Responsividade) --- */
+@media (max-width: 768px) {
+  .home-grid {
+    grid-template-columns: 1fr; /* Em telas pequenas, volta para uma única coluna */
+    text-align: center;
+  }
+
+  .hero-text p {
+    margin: 0 auto 2rem auto; /* Centraliza o parágrafo */
+  }
+
+  .hero-image {
+    /* Esconde a imagem em telas muito pequenas para focar no texto,
+       ou você pode deixar visível se preferir! */
+    display: none; 
+  }
 }
