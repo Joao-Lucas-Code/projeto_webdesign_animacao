@@ -11,7 +11,6 @@ O site foi estruturado em seções-chave (Linha do Tempo, Eras, Estúdios, Obras
 ## 👥 Integrantes do Grupo
 
 * **Grupo H**
-    * Guilherme Kliman Villela de Sousa
     * Eduardo Furlanetto Marto
     * João Pedro Pilatti
     * João Lucas Gomes
