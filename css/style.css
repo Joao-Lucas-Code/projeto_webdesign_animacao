@@ -303,3 +303,123 @@ ESTILOS DOS HUBS (GRID DE CARDS)
 .tecnica-img:hover {
   filter: grayscale(0%);
 }
+
+/* ================================================
+   11. ESTILOS DA PÁGINA DE DETALHE (MODELO MESTRE)
+   ================================================ */
+
+/* Hero Section */
+.hero-detalhe {
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 0;
+  color: #fff;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0; /* Ocupa todo o espaço */
+  background: rgba(0, 0, 0, 0.6); /* Escurece a imagem para ler o texto */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff; /* Força branco mesmo se o h1 global for azul */
+}
+
+/* Breadcrumb (Navegação de migalhas) */
+.breadcrumb {
+  background-color: var(--cor-secundaria);
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--cor-borda);
+  font-size: 0.9rem;
+  color: #8b949e;
+}
+
+.breadcrumb a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Layout Principal (Grid Texto + Sidebar) */
+.wrapper-detalhe {
+  padding: 3rem 0;
+}
+
+.detalhe-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Texto ocupa 2 partes, Sidebar 1 parte */
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Estilo do Texto */
+.detalhe-texto h2, 
+.detalhe-texto h3 {
+  color: var(--cor-primaria);
+  margin-top: 2rem;
+}
+.detalhe-texto h2:first-child {
+  margin-top: 0;
+}
+
+/* Estilo da Sidebar (Ficha Técnica) */
+.detalhe-sidebar {
+  background-color: var(--cor-secundaria);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--cor-borda);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.detalhe-sidebar dl dt {
+  font-weight: bold;
+  color: var(--cor-primaria);
+  margin-top: 1rem;
+}
+.detalhe-sidebar dl dt:first-child {
+  margin-top: 0;
+}
+.detalhe-sidebar dl dd {
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+  color: var(--cor-texto);
+}
+
+.btn-voltar {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--cor-borda);
+  color: #fff;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-align: center;
+  width: 100%;
+}
+.btn-voltar:hover {
+  background-color: var(--cor-primaria);
+  color: #fff;
+}
+
+/* Responsividade: No celular, vira uma coluna só */
+@media (max-width: 768px) {
+  .detalhe-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
